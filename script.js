@@ -21,6 +21,8 @@ December 23
 
 end of the project:
 December 24
+
+email:navayearamm@gmail.com
  */
 
 //Construction of school objects
