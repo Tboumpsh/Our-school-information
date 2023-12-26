@@ -241,3 +241,19 @@ for (const classId in classAverages) {
 }
 
 console.log(classAverages);
+
+
+// find classId by studentId
+let studentIdToClassId = {};
+for (let students of school.student) {
+  studentIdToClassId[students.studentId] = students.classId;
+}
+
+// Example usage
+let studentId = prompt("Enter the studentId: ");
+let classId = studentIdToClassId[studentId];
+if (classId) {
+  console.log(`The classId of the student with studentId ${studentId} is: ${classId}`);
+} else {
+  console.log("StudentId not found.");
+}
